@@ -82,5 +82,6 @@
                 </executions>
             </plugin>
         </plugins>
+        <finalName>gesprod</finalName>
     </build>
 </project>
