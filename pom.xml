@@ -32,7 +32,10 @@
     </dependencies>
 
     <build>
+        <finalName>gesprod</finalName>
+
         <plugins>
+            <!-- Compiler plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -49,6 +52,8 @@
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
+
+            <!-- Jar plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -61,6 +66,8 @@
                     </archive>
                 </configuration>
             </plugin>
+
+            <!-- Shade plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -77,14 +84,12 @@
                                     <mainClass>com.gesprod.Main</mainClass>
                                 </transformer>
                             </transformers>
+                            <shadedArtifactAttached>false</shadedArtifactAttached>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
         </plugins>
-        <configuration>
-            <finalName>gesprod</finalName>
-            <shadedArtifactAttached>false</shadedArtifactAttached>
-        </configuration>
     </build>
+
 </project>
