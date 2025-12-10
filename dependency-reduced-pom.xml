@@ -5,6 +5,7 @@
   <artifactId>gesprod</artifactId>
   <version>1.0-SNAPSHOT</version>
   <build>
+    <finalName>gesprod</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>

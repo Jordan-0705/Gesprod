@@ -82,6 +82,9 @@
                 </executions>
             </plugin>
         </plugins>
-        <finalName>gesprod</finalName>
+        <configuration>
+            <finalName>gesprod</finalName>
+            <shadedArtifactAttached>false</shadedArtifactAttached>
+        </configuration>
     </build>
 </project>
